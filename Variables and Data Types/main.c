@@ -14,6 +14,6 @@ int main() {
 
     printf("%f, %d, %d, %lf", floatNum, boolValue, number, doubleNum);
     printf("\nBoolean: %d", boolValueC99);
-    printf("\nUnsigned Int: %d", unsInt);
+    printf("\nUnsigned Int: %u", unsInt);
     return 0;
 }
