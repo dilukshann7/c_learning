@@ -9,4 +9,9 @@ add_executable(c_learning "Starting to write code/main.c"
         "Variables and Data Types/enumchars.c"
         "Variables and Data Types/cliargs.c"
         Operators/main.c
+        "Variables and Data Types/enumchars.c"
+        Operators/min-years.c
+        Operators/min-years.c
+        Operators/min-years.c
+        Operators/min-years.c
 )
