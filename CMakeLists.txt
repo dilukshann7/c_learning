@@ -8,10 +8,9 @@ add_executable(c_learning "Starting to write code/main.c"
         "Variables and Data Types/main.c"
         "Variables and Data Types/enumchars.c"
         "Variables and Data Types/cliargs.c"
-        Operators/main.c
-        "Variables and Data Types/enumchars.c"
-        Operators/min-years.c
-        Operators/min-years.c
-        Operators/min-years.c
-        Operators/min-years.c
+        "Operators/main.c"
+        "Operators/min-years.c"
+        "Operators/byte_size.c"
+        "Control Flow/switch_goto.c"
+        "Control Flow/challenge.c"
 )
