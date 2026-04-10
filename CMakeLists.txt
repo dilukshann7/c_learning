@@ -13,4 +13,5 @@ add_executable(c_learning "Starting to write code/main.c"
         "Operators/byte_size.c"
         "Control Flow/switch_goto.c"
         "Control Flow/challenge.c"
+        "Control Flow/challenge_2.c"
 )
