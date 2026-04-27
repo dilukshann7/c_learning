@@ -15,4 +15,5 @@ add_executable(c_learning "Starting to write code/main.c"
         "Control Flow/challenge.c"
         "Control Flow/challenge_2.c"
         Arrays/even_num.c
+        Arrays/weather.c
 )
