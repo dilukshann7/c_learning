@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    float rainfall[5][12] = {
+    const double rainfall[5][12] = {
         {4.74, 3.87, 4.33, 5.92, 7.88, 6.91, 7.50, 8.27, 7.09, 5.54, 5.14, 4.56},
         {5.12, 4.15, 4.54, 6.31, 8.28, 7.11, 7.87, 8.68, 7.50, 5.91, 5.35, 4.72},
         {4.94, 3.94, 4.44, 6.13, 8.08, 7.04, 7.68, 8.49, 7.30, 5.71, 5.20, 4.67},
@@ -9,16 +9,13 @@ int main() {
         {5.51, 4.53, 4.92, 6.69, 8.66, 7.48, 8.27, 9.06, 7.87, 6.30, 5.71, 5.12}
     };
 
-    float yearlyRainfall;
-    float totalRainfall = 0;
-    float yearlyAverage;
-    float monthlyTotal;
-    float monthlyAverage[12];
+    double totalRainfall = 0;
+    double monthlyAverage[12];
 
     printf("YEAR\tRAINFALL\n");
 
     for (int i = 0; i < 5; i++) {
-        yearlyRainfall = 0;
+        double yearlyRainfall = 0;
 
         for (int j = 0; j < 12; j++) {
             yearlyRainfall += rainfall[i][j];
@@ -28,14 +25,14 @@ int main() {
         totalRainfall += yearlyRainfall;
     }
 
-    yearlyAverage = totalRainfall / 5;
+    const double yearlyAverage = totalRainfall / 5;
     printf("\nYearly Average: %.2f inches\n", yearlyAverage);
 
     printf("\nMONTHLY AVERAGES\n");
     printf("JAN\tFEB\tMAR\tAPR\tMAY\tJUN\tJUL\tAUG\tSEP\tOCT\tNOV\tDEC\n");
 
     for (int j = 0; j < 12; j++) {
-        monthlyTotal = 0;
+        double monthlyTotal = 0;
 
         for (int i = 0; i < 5; i++) {
             monthlyTotal += rainfall[i][j];
